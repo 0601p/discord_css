@@ -1,0 +1,15 @@
+div[class^="sidebar_"] {
+  width: 0px !important;
+  max-width: 0px !important;
+  overflow: hidden;
+  transition: width 0.35s ease-in-out, max-width 0.35s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+nav[class*="guilds_"]:hover ~ div[class^="base_"] div[class^="sidebar_"],
+div[class^="sidebar_"]:hover {
+  width: 240px !important;
+  max-width: 240px !important;
+}
