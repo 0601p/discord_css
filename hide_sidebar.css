@@ -1,16 +1,11 @@
-div[class^="sidebar_"] {
+div[class^="sidebarList_"] {
   width: 0px !important;
   max-width: 0px !important;
   transition: width 0.35s ease-in-out, max-width 0.35s ease-in-out;
   overflow: hidden;
 }
 
-nav[class*="guilds_"]:hover ~ div[class^="base_"] div[class^="sidebar_"],
-div[class^="sidebar_"]:hover {
-  width: 240px !important;
-  max-width: 240px !important;
-}
-
-div[class^="wrapper_"]{
-  display: flex;
+div[class^="sidebar_"]:hover > div[class^="sidebarList_"]{
+  width: 200px !important;
+  max-width: 200px !important;
 }
