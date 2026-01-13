@@ -1,11 +1,11 @@
-div[class^="sidebarList_"] {
+div[class*="-sidebarList"] {
   width: 0px !important;
   max-width: 0px !important;
   transition: width 0.35s ease-in-out, max-width 0.35s ease-in-out;
   overflow: hidden;
 }
 
-div[class^="sidebar_"]:hover > div[class^="sidebarList_"]{
+div[class*="-sidebar"]:hover > div[class*="-sidebarList"]{
   width: 200px !important;
   max-width: 200px !important;
 }
