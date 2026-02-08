@@ -1,26 +1,16 @@
-
-div[class*="sidebarList"] {
-  width: 0px !important;
+div[class*="sidebarList"]{
   max-width: 0px !important;
-  min-width: 0px !important;
-  flex-basis: 0px !important;
-
   overflow: hidden;
-  transition: width 0.35s ease-in-out,
-              max-width 0.35s ease-in-out,
-              flex-basis 0.35s ease-in-out;
+
+  min-width: 0px !important;
+
+  transition: max-width 0.35s ease-in-out !important;
 }
 
-div[class*="sidebar"]:hover div[class*="sidebarList"] {
-  width: 200px !important;
+div[class*="sidebar"]:hover div[class*="sidebarList"]{
   max-width: 200px !important;
-  min-width: 200px !important;
-  flex-basis: 200px !important;
 }
 
-:root:has(div[class*="clickTrapContainer"]:hover) div[class*="sidebarList"] {
-  width: 200px !important;
+:root:has(div[class*="clickTrapContainer"]:hover) div[class*="sidebarList"]{
   max-width: 200px !important;
-  min-width: 200px !important;
-  flex-basis: 200px !important;
 }
